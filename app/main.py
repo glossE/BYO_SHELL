@@ -3,10 +3,12 @@ import sys
 
 def main():
     # TODO: Uncomment the code below to pass the first stage
-    exit = False
-    while exit == False:
+    command = " "
+    while command:
         sys.stdout.write("$ ")
         command = input()
+        if command == "exit":
+            exit()
         print(f"{command}: command not found")
 
 
