@@ -11,9 +11,9 @@ def main():
         type_check = re.search("^type",command)
         if command == "exit":
             exit()
-        if out:
+        elif out:
             print(command[5:])
-        if type_check:
+        elif type_check:
             ans = command[5:]
             if ans == "echo" or ans == "type" or ans=="exit":
                 print(f"{ans} is a shell builtin")
