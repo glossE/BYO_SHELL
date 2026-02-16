@@ -1,15 +1,18 @@
 import sys
-
+import re
 
 def main():
     # TODO: Uncomment the code below to pass the first stage
-    command = " "
-    while command:
+   
+    while True:
         sys.stdout.write("$ ")
         command = input()
+        out = re.search("^echo",command)
         if command == "exit":
             exit()
-        print(f"{command}: command not found")
+        if out:
+            print(command[5:])
+        
 
 
 if __name__ == "__main__":
