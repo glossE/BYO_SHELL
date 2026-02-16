@@ -12,6 +12,8 @@ def main():
             exit()
         if out:
             print(command[5:])
+        else:
+            print(f"{command}: command not found")
         
 
 
