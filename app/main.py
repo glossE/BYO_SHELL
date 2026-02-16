@@ -16,7 +16,7 @@ def main():
         if type_check:
             ans = command[5:]
             if ans == "echo" or ans == "type" or ans=="exit":
-                print(f"{ans} is a builtin")
+                print(f"{ans} is a shell builtin")
             else:
                 print(f"{ans}: not found")
         else:
